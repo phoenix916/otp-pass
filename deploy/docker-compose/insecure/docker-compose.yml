@@ -7,7 +7,7 @@ services:
     expose:
       - "11211"
 
-  yopass:
+  otp-pass:
     image: phoenix916/otp-pass
     restart: always
     ports:
