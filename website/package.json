@@ -1,0 +1,87 @@
+{
+  "name": "yopass",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/material": "^5.14.20",
+    "file-saver": "^2.0.5",
+    "i18next": "^23.7.8",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "i18next-http-backend": "^2.4.2",
+    "openpgp": "^5.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-hook-form": "^7.48.2",
+    "react-i18next": "^13.5.0",
+    "react-router-dom": "^6.20.1",
+    "react-use": "^17.4.2",
+    "swr": "^2.2.4"
+  },
+  "scripts": {
+    "start": "vite --host",
+    "build": "vite build",
+    "test": "cypress run",
+    "format": "prettier --ignore-path .gitignore -c --write .",
+    "lint": "prettier --ignore-path .gitignore  -c .",
+    "cypress": "cypress open",
+    "cy:run": "cypress run -b chrome",
+    "ci": "start-server-and-test start http://localhost:3000 cy:run"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.7",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.4",
+    "@types/openpgp": "^4.4.22",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
+    "@types/react-dropzone": "^5.1.0",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^4.2.1",
+    "cypress": "^13.6.1",
+    "cypress-file-upload": "^5.0.8",
+    "dotenv": "^16.3.1",
+    "eslint-plugin-cypress": "^2.15.1",
+    "eslint-plugin-import": "^2.29.0",
+    "prettier": "^3.1.0",
+    "start-server-and-test": "^2.0.3",
+    "typescript": "^5.3.3",
+    "vite": "^4.5.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:import/errors",
+      "plugin:import/typescript",
+      "plugin:cypress/recommended"
+    ],
+    "rules": {
+      "import/no-namespace": [
+        "error"
+      ]
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
